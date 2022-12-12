@@ -1,0 +1,66 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" type="text/css" href="home.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <img src="New folder/bg.jpg" id="bg">
+        <img src="New folder/bats.png" id="bats">
+        <img src="New folder/castle.png" id="castle">
+        <img src="New folder/img.png" id="img">
+        <img src="New folder/wolf.png" id="wolf">
+    </section>
+        <div class="sec">
+            <div class="content">
+                <h2>The Impish Ghost</h2>
+                <p> “My neighbor Diane and I had a playful poltergeist for years, and we called it Billy.” So begins Reddit.com user abbys_alibi in their real-life ghost story. “I’d come home and find something put in a weird place: milk in a cupboard, toilet paper in the fridge, laundry detergent in the bathtub. Diane once called to ask if Billy had been around, because she couldn’t find a gallon of milk. We finally found it outside on her back steps. And sugar … darn sugar! Every morning, my sugar bowl was empty.
+
+                    “When I’d had enough, I would point to Diane’s home and yell, ‘Go see Diane!’ Within five minutes, I’d get a call from her. ‘Thanks a lot,’ she’d say. He’d gone and pulled shenanigans at her place. This occurred for the entire two years we lived there. No one believed us—not even our husbands. My mother thought someone was stealing from us when we were sleeping or out of the house. My sister believed something was going on but didn’t know what. I still can’t explain any of it.”
+                    
+                    If that real-life ghost story has you feeling eerie, indulge in some fictional frights with the best Halloween movies on Hulu.
+                </p>
+            </div>
+        </div>   
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+
+        <script>
+
+            gsap.to("#img",{
+                scrollTrigger : {
+                    scrub:0.5,
+                },
+                x : 1500,
+                y : 500,
+            })
+
+            gsap.from("#wolf",{
+                scrollTrigger : {
+                    scrub:0.5,
+                },
+                x : 400,
+            })
+
+            gsap.from("#castle",{
+                scrollTrigger : {
+                    scrub:0.5,
+                },
+                x : -100,
+              
+            })
+
+            gsap.from("#bats",{
+                scrollTrigger : {
+                    scrub:0.5,
+                },
+                scale : 1.5,
+            })
+        </script>
+</body>
+</html>
